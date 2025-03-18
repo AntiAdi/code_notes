@@ -1,0 +1,12 @@
+1.	SyntaxError – Occurs when Python encounters invalid syntax.
+2.	IndentationError – Raised when incorrect indentation is used.
+3.	TypeError – Happens when an operation is performed on an incompatible data type.
+4.	ValueError – Occurs when a function gets an argument of the right type but an invalid value.
+5.	IndexError – Raised when trying to access an invalid index in a list.
+6.	KeyError – Happens when accessing a missing key in a dictionary.
+7.	AttributeError – Occurs when trying to use a non-existent attribute or method on an object.
+8.	ZeroDivisionError – Raised when attempting to divide by zero.
+9.	FileNotFoundError – Happens when trying to open a non-existent file.
+10.	ModuleNotFoundError – Occurs when trying to import a missing module.
+11.	NameError – Raised when referencing a variable that has not been defined.
+12.	RuntimeError – A general error that occurs when execution fails unexpectedly.
