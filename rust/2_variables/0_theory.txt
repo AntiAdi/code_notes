@@ -1,0 +1,34 @@
+Immutability : When a variable is immutable, once a value is bound to a name, you can’t change that value.
+    Code
+        fn main() {
+            let x = 5;
+            println!("The value of x is: {}", x);
+            x = 6;
+            println!("The value of x is: {}", x);
+        }
+    Error o/p
+        error[E0384]: cannot assign twice to immutable variable `variable_a`
+        --> 1_error_immutability.rs:4:5
+        |
+        2 |     let variable_a = 13;
+        |         ---------- first assignment to `variable_a`
+        3 |     println!("Var = {}", variable_a);
+        4 |     variable_a = 12;
+        |     ^^^^^^^^^^^^^^^ cannot assign twice to immutable variable
+        |
+        help: consider making this binding mutable
+        |
+        2 |     let mut variable_a = 13;
+        |         +++
+
+Variables vs Constants : Are immutable variables just like constants ?
+    Constants aren’t just immutable by default—they’re always immutable.
+
+    You declare constants using the const keyword instead of the let keyword, and the type of the value must be annotated.
+
+    The last difference is that constants may be set only to a constant expres­sion,
+    not to the result of a function call or any other value that could only be computed at runtime.
+
+    e.g. const MAX_POINTS: u32 = 100_000;   
+
+    

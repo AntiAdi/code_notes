@@ -1,0 +1,1 @@
+/home/aadityarajk/VS_CODE/code_notes/rust/3_variables_and_print/variables_and_print/target/debug/variables_and_print: /home/aadityarajk/VS_CODE/code_notes/rust/3_variables_and_print/variables_and_print/src/main.rs

@@ -1,0 +1,45 @@
+*RUST*
+    It's the most beloved language on the internet since after 2016.
+    It's the second most fastest language after C.
+    Rust users are called Rustaceans.
+    
+
+
+
+
+
+
+In VS Code, ‘Rust’ extension is depreciated. Use ‘rust-analyzer’ instead.
+
+
+For Windows
+    Rust's Official Website
+    - https://www.rust-lang.org/tools/install
+    
+    Microsoft C++ Build Tools
+    - https://visualstudio.microsoft.com/visual-cpp-build-tools/
+    - Remember to select "Desktop Development with C++"
+    
+    
+For Linux / MacOS
+    
+    Linux Installation
+    
+    Install curl and a C compiler (GCC or Clang, according to the distribution documentation)
+    For MacOS run "xcode-select --install" to get a C compiler
+    
+    Then run:
+    
+    `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+    
+Rust Compiler and It’s package manager Cargo is installed.
+Checkout with rustc --version
+
+
+Updating and Uninstalling
+    After you’ve installed Rust via rustup, updating to the latest version is easy.
+    From your shell, run the following update script:
+        $rustup update
+    To uninstall Rust and rustup, run the following uninstall script from
+    your shell:
+        $rustup self uninstall

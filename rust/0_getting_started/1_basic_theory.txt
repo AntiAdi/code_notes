@@ -1,0 +1,61 @@
+1. What is Cargo?
+    
+    Cargo is the Rust package manager and build system.
+    It helps with managing Rust projects by handling dependencies, compiling code, and running tests.
+
+2. To create a new Rust Project :
+    -> cargo new project_name
+    -> Cargo.toml : Contains metadata about the project (dependencies, name, version, etc.).
+    -> A src folder with a main.rs file, which is the entry point of your Rust program.
+
+3. To build (compile) a Rust Project :
+    cargo build 
+
+    Possible Error :
+        Compiling hello_world v0.1.0 (/home/.../VS_CODE/code_notes/rust/2_hello_world/hello_world)
+        error: linker `cc` not found
+        |
+        = note: No such file or directory (os error 2)
+        
+        error: could not compile `hello_world` (bin "hello_world") due to 1 previous error
+    Fix :
+        Install a Cc (C compiler). 
+        Rust relies on a C compiler (such as gcc or clang) to link the compiled code.
+            
+            sudo apt update
+            sudo apt install build-essential
+            #Installs all build essentials such as gcc, clang, make, etc.
+
+4. To run a built/unbuilt Rust Project :
+    cargo run
+
+
+*THEORY*
+
+    cargo new also initialises a new Git repository along with a .gitignore file.
+    
+    .toml -> TOML (Tom’s Obvious, Minimal Language) format, which is Cargo’s configuration format.
+
+    Cargo expects your source files to live inside the src directory. The top-
+    level project directory is just for README files, license information, config-
+    uration files, and anything else not related to your code. Using Cargo helps
+    you organize your projects. There’s a place for everything, and everything is
+    in its place.
+
+    cargo 
+        run : build and run
+        check : check for errors only (no build)
+        build : build but not run
+
+    Commands are the same no matter which operating system you’re working on.
+
+    When your project is finally ready for release, you can use cargo build --release to compile it with optimizations.
+    This command will create an executable in target/release instead of target/debug.
+    The optimizations make your Rust code run faster, but turning them on lengthens the time it takes for your program to compile.
+    This is why there are two different profiles:
+        One for development, when you want to rebuild quickly and often
+        Another for building the final program you’ll give to a user that won’t be rebuilt repeatedly and that will run as fast as possible.
+    If you’re bench- marking your code’s running time, be sure to run cargo build --release and benchmark with the executable in target/release.
+
+    
+

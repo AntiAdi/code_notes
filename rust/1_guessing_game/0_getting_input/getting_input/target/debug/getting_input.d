@@ -1,0 +1,1 @@
+/home/aadityarajk/VS_CODE/code_notes/rust/1_guessing_game/0_getting_input/getting_input/target/debug/getting_input: /home/aadityarajk/VS_CODE/code_notes/rust/1_guessing_game/0_getting_input/getting_input/src/main.rs
