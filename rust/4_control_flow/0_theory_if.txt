@@ -1,0 +1,41 @@
+if expression
+
+    Syntax
+
+        if condition 1 {
+            ...
+        }
+        else if condition 2 {
+            ...
+        }
+        ...
+        ...
+        else {
+            ....
+        }
+
+    The condition MUST be a boolian.
+        
+        Condition cannot be something like this :
+
+            let mut x : i32 = 1;
+            if x {
+                ...
+            }
+    
+        This will throw an error. There is no implicit conversion.
+
+    Using if in a let statement
+
+        For example :
+
+            let y = if condition 1 {
+                4
+            }
+            else {
+                5
+            }
+
+        Remember that blocks of code evaluate to the last expression in them, and numbers by themselves are also expressions. 
+
+        

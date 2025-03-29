@@ -1,0 +1,49 @@
+Loops
+
+    Rust has three kinds of Loops
+
+        1. loop 
+        2. while
+        3. for
+
+    loop
+
+        The loop keyword tells Rust to execute a block of code over and over again forever or until you explicitly tell it to stop.
+
+            loop {
+                println!("you brokie !"); //give it a try 
+            }
+
+    while
+
+            while condition {
+                ...
+            }
+
+    for
+
+        Take a look at this :
+            
+            let a = [10, 20, 30, 40, 50];
+            let mut index = 0;
+            while index < 5 {
+                println!("the value is: {}", a[index]);
+                index = index + 1;
+            }
+
+        This approach is error prone if the length is incorrect. 
+
+            for element in a.iter() {
+                println!("the value is: {}", element);
+            }
+        
+        This is much safer. The safety and conciseness of for loops make them the most commonly used loop construct in Rust.
+        Even in situations in which you want to run some code a certain number of times, For e.g.
+
+            for countdown in (1..4).rev() {
+                println!("{}", countdown);
+            }
+            println!("Liftoff !!");
+
+        
+        

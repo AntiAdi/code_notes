@@ -1,0 +1,64 @@
+Functions
+
+    fn keyword allows us to declare new functions.
+
+    Rust code uses snake case as the conventional style for function and vari­able names.
+    In snake case, all letters are lowercase and underscores separate words.
+
+    You can define your functions before or after the main function.
+    Rust doesn’t care where you define your functions, only that they’re defined somewhere.
+
+    Parameters vs Arguments
+        
+        Functions can also be defined to have parameters, which are special variables that are part of a function’s signature.
+        When a function has parameters, you can provide it with concrete values for those parameters.
+        Technically, the concrete values are called arguments.
+    
+    Example fn :
+        
+        fn main() {
+            another_function(5);
+
+            fn another_function(x: i32) {
+                println!("The value of x is: {}", x);
+            }
+        }
+
+    Statements vs Expressions
+        
+        Statements are instruc­tions that perform some action and do not return a value.
+        Expressions evaluate to a resulting value.
+    
+        This is different from what happens in other languages, such as C and Ruby, where the assignment returns the value of the assignment.
+        In those languages, you can write x = y = 6 and have both x and y contain the value 6; that is not the case in Rust.
+
+    Expressions
+
+        Calling a function is an expres­sion.
+        
+        Calling a macro is an expression.
+        
+        The block that we use to create new scopes, {}, is an expression.
+
+            fn main(){
+                let y = {
+                    let x = 3;
+                    x + 1
+                };
+
+                println!("The value of y is: {}", y); //evaluates to 4
+            }
+
+    Return Values  
+
+        We don’t name return values, but we do declare their type after an arrow (->).
+        In Rust, the return value of the function is synonymous with the value of the final expression in the block of the body of a function.
+        You can return early from a function by using the return keyword and specifying a value, but most functions return the last expression implicitly.
+
+            fn five() -> i32 {
+                5
+            }
+        
+        But if we place a semi­ colon at the end of the line containing 5, changing it from an expression to a statement, we’ll get an error.
+
+            
